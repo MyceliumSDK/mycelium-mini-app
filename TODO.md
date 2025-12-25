@@ -80,11 +80,42 @@ Questions, thoughts, and solutions for Mycelium Mini App project.
 4. Test at https://base.dev/preview
 5. Publish by creating a post in Base app with your app URL
 
+## Base Account Association
+
+To associate your Mini App with your Base/Farcaster account:
+
+1. **Go to Base Build Account Association Tool**:
+   - Visit: https://base.org/build (or the account association tool)
+   - Or check Base documentation for the latest tool URL
+
+2. **Enter your app URL**:
+   - Your production URL (e.g., `https://mycelium.sh`)
+   - The tool will verify your domain
+
+3. **Sign the manifest**:
+   - Connect your wallet
+   - Sign the message to generate `header`, `payload`, and `signature`
+
+4. **Update manifest**:
+   - Copy the generated `accountAssociation` object
+   - Replace placeholders in `public/.well-known/farcaster.json`:
+     ```json
+     "accountAssociation": {
+       "header": "YOUR_HEADER_HERE",
+       "payload": "YOUR_PAYLOAD_HERE",
+       "signature": "YOUR_SIGNATURE_HERE"
+     }
+     ```
+
+5. **Redeploy** your app after updating the manifest
+
+**Note**: Account association is optional for initial testing but required for production deployment and to appear in Base app directory.
+
 ## Notes
 
 - Privy handles authentication for both Mini App and Web modes
 - Farcaster Mini App SDK available via `window.miniappSdk`
 - Base network configured via Wagmi
 - Manifest must be publicly accessible at `/.well-known/farcaster.json`
-- Account association (Base docs step 4-5) is optional for initial testing
+- Account association links your Mini App to your Farcaster account
 

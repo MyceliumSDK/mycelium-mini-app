@@ -18,7 +18,12 @@
     "tags": ["yield", "defi", "base", "farcaster"],
     "ogTitle": "Mycelium Mini App",
     "ogDescription": "Generate yield with Mycelium SDK on Base network",
-    "ogImageUrl": "https://mycelium.sh/og-image.png"
+    "ogImageUrl": "https://mycelium.sh/og-image.png",
+    "accountAssociation": {
+      "header": "YOUR_HEADER_HERE",
+      "payload": "YOUR_PAYLOAD_HERE",
+      "signature": "YOUR_SIGNATURE_HERE"
+    }
   }
 }
 
