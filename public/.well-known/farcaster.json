@@ -1,0 +1,24 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Mycelium Mini App",
+    "subtitle": "Yield generation platform",
+    "description": "Generate yield with Mycelium SDK on Base network",
+    "iconUrl": "https://mycelium.sh/icon.png",
+    "homeUrl": "https://mycelium.sh",
+    "splashImageUrl": "https://mycelium.sh/splash.png",
+    "splashBackgroundColor": "#FFFFFF",
+    "heroImageUrl": "https://mycelium.sh/hero.png",
+    "tagline": "Farcaster Mini App with Privy & Base",
+    "screenshotUrls": [
+      "https://mycelium.sh/screenshot-portrait.png"
+    ],
+    "webhookUrl": "https://mycelium.sh/api/webhook",
+    "primaryCategory": "finance",
+    "tags": ["yield", "defi", "base", "farcaster"],
+    "ogTitle": "Mycelium Mini App",
+    "ogDescription": "Generate yield with Mycelium SDK on Base network",
+    "ogImageUrl": "https://mycelium.sh/og-image.png"
+  }
+}
+
