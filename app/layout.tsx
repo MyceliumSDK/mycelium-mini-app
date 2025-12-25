@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Providers } from './providers';
 import './globals.css';
 
+
 export const metadata: Metadata = {
   title: 'Mycelium Mini App',
   description: 'Farcaster Mini App with Privy & Base',
@@ -41,6 +42,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta name="base:app_id" content="694d4b1fc63ad876c9081308" />
+      </head>
       <body>
         <Providers privyAppId={privyAppId}>{children}</Providers>
       </body>
